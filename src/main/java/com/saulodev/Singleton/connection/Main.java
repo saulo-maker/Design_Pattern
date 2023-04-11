@@ -1,6 +1,6 @@
 package com.saulodev.Singleton.connection;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         ConnectDatabase.getInstance().connect();
     }
