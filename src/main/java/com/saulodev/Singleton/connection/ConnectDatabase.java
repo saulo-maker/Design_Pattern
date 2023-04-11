@@ -4,12 +4,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 public class ConnectDatabase {
+    // Criado atributo imutável recebendo um nova instância da classe.
     private static final ConnectDatabase singleton = new ConnectDatabase();
+    // Método responsável por retornar a instância da classe
     public static ConnectDatabase getInstance() {
         return singleton;
     }
+    // Criado classe conexão com o banco
     public Connection connect() {
-
         final String url = "jdbc:postgresql://localhost/teste";
         final String user = "postgres";
         final String password = "admin123";
